@@ -221,6 +221,7 @@ if (window.Shopify?.designMode && !isIOS) {
         isOpen: (el) => el.getAttribute('open') != null,
         open: (el) => {
           // @ts-ignore
+            debugger
           el.closest('dialog-component').toggleDialog();
         },
       },

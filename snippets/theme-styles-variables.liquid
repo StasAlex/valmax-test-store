@@ -55,8 +55,8 @@
     --narrow-content-width: 36rem;
     --normal-content-width: 42rem;
     --wide-content-width: 46rem;
-    --narrow-page-width: 90rem;
-    --normal-page-width: 144rem;
+    --narrow-page-width: 1360px;
+    --normal-page-width: 120rem;
     --wide-page-width: 150rem;
 
     /* Section Heights */
@@ -572,6 +572,7 @@
     /* Font sizes (px) */
     --fs-base:  {{ settings.fs_base   | default: 16 }}px;
     --fs-base-md:  18px;
+    --fs-base-xl:  20px;
     --fs-large: {{ settings.fs_large  | default: 24 }}px;
     --fs-mini:  {{ settings.fs_mini   | default: 14 }}px;
     --fs-h1:    {{ settings.fs_h1     | default: 72 }}px;
@@ -604,6 +605,7 @@
     --color-light-grey: {{ settings.light_grey | default: '#61656B' }};
     --color-light-grey-lighter: {{ 'rgba(37, 30, 27, 0.14)' }};
     --color-high-light-grey: {{ settings.high_light_grey | default: '#F6F3ED' }};
+    --color-high-light-grey-lighter: {{ 'rgba(97, 101, 107, 0.2)' }};
 
     --menu-link-padding-inline: 17px;
   }
