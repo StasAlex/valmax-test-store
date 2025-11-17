@@ -253,7 +253,59 @@
         "padding-block-end": 72
       }
     },
-    "product_list_fa6P9H": {
+    "scroll_gallery_gFzeBA": {
+      "type": "scroll-gallery",
+      "blocks": {
+        "image_QY4G7T": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/User_Image.png",
+            "alt": ""
+          }
+        },
+        "image_rkk7UM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/User_Image_1.png",
+            "alt": ""
+          }
+        },
+        "image_FUnBMx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/User_Image_2.png",
+            "alt": ""
+          }
+        },
+        "image_4CfD3i": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/User_Image_3.png",
+            "alt": ""
+          }
+        },
+        "image_Fg8Fp4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/User_Image_4.png",
+            "alt": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_QY4G7T",
+        "image_rkk7UM",
+        "image_FUnBMx",
+        "image_4CfD3i",
+        "image_Fg8Fp4"
+      ],
+      "name": "X Scroll gallery",
+      "settings": {
+        "heading": "Norkaya is more than just hydrotherapy",
+        "text": "<p>ʼOur journey is just beginning, and we will continue to innovate, integrating wellness concepts into every facet of your life – from the water you immerse in to the spaces you inhabit.</p>"
+      }
+    },
+    "product_list_r8rbWm": {
       "type": "product-list",
       "blocks": {
         "static-header": {
@@ -290,7 +342,7 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "product_list_text_YFtzcL": {
+            "product_list_text_qDJyrB": {
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
@@ -298,9 +350,9 @@
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h4",
+                "type_preset": "rte",
                 "font": "var(--font-body--family)",
-                "font_size": "",
+                "font_size": "1rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
@@ -316,7 +368,7 @@
               },
               "blocks": {}
             },
-            "product_list_button_MWeP9V": {
+            "product_list_button_ynRTgA": {
               "type": "_product-list-button",
               "name": "t:names.product_list_button",
               "settings": {
@@ -332,8 +384,8 @@
             }
           },
           "block_order": [
-            "product_list_text_YFtzcL",
-            "product_list_button_MWeP9V"
+            "product_list_text_qDJyrB",
+            "product_list_button_ynRTgA"
           ]
         },
         "static-product-card": {
@@ -354,7 +406,7 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "product_card_gallery_677WP3": {
+            "product_card_gallery_UgGpm3": {
               "type": "_product-card-gallery",
               "name": "t:names.product_card_media",
               "settings": {
@@ -370,11 +422,11 @@
               },
               "blocks": {}
             },
-            "product_title_YXxMTj": {
+            "product_title_TgFad4": {
               "type": "product-title",
               "name": "t:names.product_title",
               "settings": {
-                "width": "100%",
+                "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "rte",
@@ -395,7 +447,7 @@
               },
               "blocks": {}
             },
-            "price_JQzVV4": {
+            "price_UTDJFN": {
               "type": "price",
               "name": "t:names.product_price",
               "settings": {
@@ -420,25 +472,25 @@
             }
           },
           "block_order": [
-            "product_card_gallery_677WP3",
-            "product_title_YXxMTj",
-            "price_JQzVV4"
+            "product_card_gallery_UgGpm3",
+            "product_title_TgFad4",
+            "price_UTDJFN"
           ]
         }
       },
-      "name": "Featured collection",
+      "name": "t:names.products_carousel",
       "settings": {
-        "collection": "all",
-        "layout_type": "grid",
+        "collection": "luxury-jacuzzis-outdoor-spas",
+        "layout_type": "carousel",
         "carousel_on_mobile": false,
-        "max_products": 8,
+        "max_products": 6,
         "columns": 4,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
         "columns_gap": 8,
         "rows_gap": 24,
         "icons_style": "arrow",
-        "icons_shape": "none",
+        "icons_shape": "circle",
         "section_width": "page-width",
         "horizontal_alignment": "flex-start",
         "gap": 28,
@@ -450,6 +502,7 @@
   },
   "order": [
     "hero_jVaWmY",
-    "product_list_fa6P9H"
+    "scroll_gallery_gFzeBA",
+    "product_list_r8rbWm"
   ]
 }
