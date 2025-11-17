@@ -269,7 +269,6 @@
     let xScrollResizeTimeout = null;
 
     function reinitOnResize() {
-        debugger
         clearTimeout(xScrollResizeTimeout);
         xScrollResizeTimeout = setTimeout(() => {
             const sections = document.querySelectorAll('[data-x-scroll-section]');
