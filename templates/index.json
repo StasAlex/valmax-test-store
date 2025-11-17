@@ -260,35 +260,40 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/User_Image.png",
-            "alt": ""
+            "alt": "",
+            "link": ""
           }
         },
         "image_rkk7UM": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/User_Image_1.png",
-            "alt": ""
+            "alt": "",
+            "link": "shopify://collections/all"
           }
         },
         "image_FUnBMx": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/User_Image_2.png",
-            "alt": ""
+            "alt": "",
+            "link": "shopify://collections/luxury-jacuzzis-outdoor-spas"
           }
         },
         "image_4CfD3i": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/User_Image_3.png",
-            "alt": ""
+            "alt": "",
+            "link": "shopify://collections/all"
           }
         },
         "image_Fg8Fp4": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/User_Image_4.png",
-            "alt": ""
+            "alt": "",
+            "link": "shopify://collections/all"
           }
         }
       },

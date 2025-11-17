@@ -108,7 +108,7 @@
                 // When section center reaches viewport center → start animation
                 start: 'center center',
                 // Allocate extra scroll distance for the pinned animation
-                end: '+=50',
+                end: '+=400',
                 scrub: 1,          // smooth, scroll-linked animation
                 pin: true,         // pin the section (page background stops scrolling)
                 pinSpacing: true,  // add spacing so content below is pushed down
@@ -255,6 +255,20 @@
         swiperEl.__xSwiperInstance = swiper;
     }
 
+    function attachItemClickHandlers(section) {
+        section.addEventListener('click', (event) => {
+            const clickableItem = event.target.closest('[data-x-scroll-link]');
+            if (!clickableItem) return;
+
+            const url = clickableItem.getAttribute('data-x-scroll-link');
+            if (!url) return;
+
+            // optional: если нужно открывать в той же вкладке
+            window.location.href = url;
+        });
+    }
+
+
     /**
      * Init all X Scroll sections on the page
      */
@@ -263,6 +277,7 @@
         sections.forEach((section) => {
             initDesktopXScrollSection(section);
             initMobileSwiper(section);
+            attachItemClickHandlers(section);
         });
     }
 
@@ -301,6 +316,7 @@
         ) {
             initDesktopXScrollSection(section);
             initMobileSwiper(section);
+            attachItemClickHandlers(section);
         }
     });
 })();
