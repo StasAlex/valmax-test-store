@@ -310,204 +310,138 @@
         "text": "<p>ʼOur journey is just beginning, and we will continue to innovate, integrating wellness concepts into every facet of your life – from the water you immerse in to the spaces you inhabit.</p>"
       }
     },
-    "product_list_r8rbWm": {
-      "type": "product-list",
+    "x_video_slider_fVeHTP": {
+      "type": "x-video-slider",
       "blocks": {
-        "static-header": {
-          "type": "_product-list-content",
-          "name": "t:names.header",
-          "static": true,
+        "slide_xRdtDU": {
+          "type": "slide",
           "settings": {
-            "content_direction": "row",
-            "vertical_on_mobile": false,
-            "horizontal_alignment": "space-between",
-            "vertical_alignment": "flex-end",
-            "align_baseline": true,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "product_list_text_qDJyrB": {
-              "type": "_product-list-text",
-              "name": "t:names.collection_title",
-              "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "product_list_button_ynRTgA": {
-              "type": "_product-list-button",
-              "name": "t:names.product_list_button",
-              "settings": {
-                "label": "View all",
-                "open_in_new_tab": false,
-                "style_class": "link",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "product_list_text_qDJyrB",
-            "product_list_button_ynRTgA"
-          ]
+            "slide_title": "Overwhelmed by Stress?",
+            "slide_description": "The relentless pace of modern life can leave us depleted, longing for moments of profound peace and mental clarity.",
+            "slide_media": "shopify://files/videos/watermarked_preview.mp4"
+          }
         },
-        "static-product-card": {
-          "type": "_product-card",
-          "name": "t:names.product_card",
-          "static": true,
+        "slide_8LQigj": {
+          "type": "slide",
           "settings": {
-            "product_card_gap": 4,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "product_card_gallery_UgGpm3": {
-              "type": "_product-card-gallery",
-              "name": "t:names.product_card_media",
-              "settings": {
-                "image_ratio": "adapt",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "product_title_TgFad4": {
-              "type": "product-title",
-              "name": "t:names.product_title",
-              "settings": {
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 4,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "price_UTDJFN": {
-              "type": "price",
-              "name": "t:names.product_price",
-              "settings": {
-                "show_sale_price_first": true,
-                "show_installments": false,
-                "show_tax_info": false,
-                "type_preset": "h6",
-                "width": "100%",
-                "alignment": "left",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "color": "var(--color-foreground)",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "product_card_gallery_UgGpm3",
-            "product_title_TgFad4",
-            "price_UTDJFN"
-          ]
+            "slide_title": "Feeling Mentally Drained?",
+            "slide_description": "The constant demands of daily life can leave your mind exhausted. Discover how to restore balance and reconnect with a sense of inner calm.",
+            "slide_media": "shopify://files/videos/watermarked_preview.mp4"
+          }
+        },
+        "slide_B6TNcY": {
+          "type": "slide",
+          "settings": {
+            "slide_title": "Need a Moment to Breathe?",
+            "slide_description": "When everything feels overwhelming, even a small pause can change everything. Give yourself permission to slow down and recharge.",
+            "slide_media": "shopify://files/videos/watermarked_preview.mp4"
+          }
         }
       },
-      "name": "t:names.products_carousel",
+      "block_order": [
+        "slide_xRdtDU",
+        "slide_8LQigj",
+        "slide_B6TNcY"
+      ],
+      "name": "X Video Slider",
       "settings": {
-        "collection": "luxury-jacuzzis-outdoor-spas",
-        "layout_type": "carousel",
-        "carousel_on_mobile": false,
-        "max_products": 6,
-        "columns": 4,
-        "mobile_columns": "2",
-        "mobile_card_size": "60cqw",
-        "columns_gap": 8,
-        "rows_gap": 24,
-        "icons_style": "arrow",
-        "icons_shape": "circle",
-        "section_width": "page-width",
-        "horizontal_alignment": "flex-start",
-        "gap": 28,
-        "color_scheme": "scheme-1",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "subtitle": "The Human Need",
+        "title": "Finding Balance  in a Modern World",
+        "bg_color": "#251e1b",
+        "padding_top_desktop": 110,
+        "padding_bottom_desktop": 110,
+        "padding_top_mobile": 58,
+        "padding_bottom_mobile": 58
+      }
+    },
+    "x_tabs_slider_QdNi9C": {
+      "type": "x-tabs-slider",
+      "blocks": {
+        "tab_AzimVK": {
+          "type": "tab",
+          "settings": {
+            "tab_label": "Immersive Hydro-Massage",
+            "bg_image": "shopify://shop_images/tab-1.png",
+            "icon": "shopify://shop_images/tab-icon-1.svg",
+            "card_title": "Immersive Hydro-Massage",
+            "card_text": "Step into total relaxation with Norkaya’s hydro-massage system. Designed to envelop your body in soothing water jets, it delivers a spa-like experience that relieves tension, improves circulation, and restores balance after every session.",
+            "cta_label": "Discover wellness",
+            "cta_url": "shopify://collections/all"
+          }
+        },
+        "tab_b7T9tK": {
+          "type": "tab",
+          "settings": {
+            "tab_label": "The Hot & Cold Hydro-Ritual",
+            "bg_image": "shopify://shop_images/tab-2.png",
+            "icon": "shopify://shop_images/tab-icon-2.svg",
+            "card_title": "The Hot & Cold Hydro-Ritual",
+            "card_text": "Transform your living space into a personal retreat. Norkaya’s complete wellness solutions combine relaxation, hydrotherapy, and design to create a sanctuary where body and mind can truly recharge.",
+            "cta_label": "Discover wellness",
+            "cta_url": "shopify://collections/all"
+          }
+        },
+        "tab_TRGt9Q": {
+          "type": "tab",
+          "settings": {
+            "tab_label": "Artisan Wood & Marble Craftsmanship",
+            "bg_image": "shopify://shop_images/tab-3.png",
+            "icon": "shopify://shop_images/tab-icon-1.svg",
+            "card_title": "Artisan Wood & Marble Craftsmanship",
+            "card_text": "Immerse yourself in an aromatic ritual crafted from ultra-refined essential blends. Crystal-clean airflow envelops your senses with subtle luxury, transforming each breath into a moment of clarity, serenity, and profound indulgence. Designed for those who seek wellness without compromise.",
+            "cta_label": "Discover wellness",
+            "cta_url": "shopify://collections/all"
+          }
+        },
+        "tab_kT9atW": {
+          "type": "tab",
+          "settings": {
+            "tab_label": "Fitness & Wellness",
+            "bg_image": "shopify://shop_images/tab-1.png",
+            "icon": "shopify://shop_images/tab-icon-1.svg",
+            "card_title": "Fitness & Wellness",
+            "card_text": "Discover a new dimension of hydro-therapy. Dynamic water pulses adapt to your body’s natural rhythm, easing tension with surgical precision while maintaining an exquisite balance of warmth, pressure, and comfort. A refined ritual that transforms routine into pure rejuvenation.",
+            "cta_label": "Discover wellness",
+            "cta_url": "shopify://collections/all"
+          }
+        },
+        "tab_QHPmNd": {
+          "type": "tab",
+          "settings": {
+            "tab_label": "Complete Home Sanctuary",
+            "bg_image": "shopify://shop_images/tab-2.png",
+            "icon": "shopify://shop_images/tab-icon-1.svg",
+            "card_title": "Complete Home Sanctuary",
+            "card_text": "Experience a symphony of soft, intelligent heat that flows through your body like a calming tide. Infra-thermal technology releases deep-layer tension, stabilizes circulation, and brings a rare level of tranquility reserved for private spa sanctuaries.",
+            "cta_label": "Discover wellness",
+            "cta_url": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "tab_AzimVK",
+        "tab_b7T9tK",
+        "tab_TRGt9Q",
+        "tab_kT9atW",
+        "tab_QHPmNd"
+      ],
+      "name": "X Tabs Slider",
+      "settings": {
+        "title": "Intelligent Solutions for Everyday Harmony",
+        "bg_color": "#faf7f1",
+        "padding_top_mobile": 58,
+        "padding_bottom_mobile": 0,
+        "padding_top_desktop": 110,
+        "padding_bottom_desktop": 56,
+        "enable_autoplay": true,
+        "autoplay_delay": 5
       }
     }
   },
   "order": [
     "hero_jVaWmY",
     "scroll_gallery_gFzeBA",
-    "product_list_r8rbWm"
+    "x_video_slider_fVeHTP",
+    "x_tabs_slider_QdNi9C"
   ]
 }

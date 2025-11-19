@@ -2,20 +2,54 @@ body {
     font-family: var(--ff-base) !important;
     font-weight: 400;
 }
+body *,
+body .swiper-wrapper {
+    box-sizing: border-box;
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--ff-base) !important;
     font-weight: 500;
 }
-.hero a.button {
+h2 {
+    font-size: var(--fs-h2-mobile);
+}
+h3 {
+    font-size: var(--fs-h3-mobile);
+}
+@media screen and (min-width: 768px) {
+    h2 {
+        font-size: var(--fs-h2-tablet);
+    }
+    h3 {
+        font-size: var(--fs-h3-tablet);
+    }
+}
+@media screen and (min-width: 1100px) {
+    h2 {
+        font-size: var(--fs-h2);
+    }
+    h3 {
+        font-size: var(--fs-h3);
+    }
+}
+.button {
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 18px 0 17px;
     background: var(--color-main-light);
     color: var(--color-main-dark);
     font-size: var(--fs-mini);
+    font-weight: var(--fw-secondary);
     line-height: var(--lh-base);
     letter-spacing: var(--ls-1);
     text-transform: uppercase;
+    border-radius: 36px;
+}
+.hero a.button {
     padding: 17px 42px 17px 17px;
     position: relative;
-    top: 2px;
 }
 .hero a.button:after {
     content: '';

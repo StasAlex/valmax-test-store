@@ -1,0 +1,311 @@
+{% comment %}
+  X Tabs Slider Section
+{% endcomment %}
+
+{{ 'x-tabs-slider.css' | asset_url | stylesheet_tag }}
+{{ 'x-tabs-slider.js' | asset_url | script_tag }}
+
+<section
+  id="x-tabs-{{ section.id }}"
+  class="x-tabs"
+  data-section-id="{{ section.id }}"
+  style="
+    background: {{ section.settings.bg_color }};
+    padding-top: {{ section.settings.padding_top_mobile }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+  "
+>
+  <style>
+    @media (min-width: 992px) {
+      #x-tabs-{{ section.id }} {
+        padding-top: {{ section.settings.padding_top_desktop }}px !important;
+        padding-bottom: {{ section.settings.padding_bottom_desktop }}px !important;
+      }
+    }
+  </style>
+
+  <div class="x-tabs__inner container">
+  {% if section.settings.title != blank %}
+    <h2 class="x-tabs__title">
+      {{ section.settings.title }}
+    </h2>
+  {% endif %}
+
+  {% if section.blocks.size > 0 %}
+    {%- assign autoplay_delay_ms = section.settings.autoplay_delay | times: 1000 -%}
+
+    <div class="x-tabs-hero">
+      {%- comment -%} MAIN SWIPER {%- endcomment -%}
+      <div
+        class="swiper x-tabs-main-swiper"
+        id="x-tabs-main-swiper-{{ section.id }}"
+        data-autoplay-delay="{{ autoplay_delay_ms }}"
+        data-enable-autoplay="{{ section.settings.enable_autoplay }}"
+      >
+        <div class="swiper-wrapper">
+          {% for block in section.blocks %}
+            <div
+              class="swiper-slide x-tabs-slide"
+              data-tab-index="{{ forloop.index0 }}"
+              {{ block.shopify_attributes }}
+            >
+              <div class="x-tabs-slide__bg">
+                {% if block.settings.bg_image != blank %}
+                  <picture>
+                    <img
+                      src="{{ block.settings.bg_image | image_url: width: 2000 }}"
+                      alt="{{ block.settings.card_title | escape }}"
+                      loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"
+                      width="{{ block.settings.bg_image.width }}"
+                      height="{{ block.settings.bg_image.height }}"
+                    >
+                  </picture>
+                {% endif %}
+              </div>
+
+              <div class="x-tabs-slide__overlay"></div>
+
+              <div class="x-tabs-slide__content">
+                <div class="x-tabs-card">
+                  {% if block.settings.icon != blank %}
+                    <div class="x-tabs-card__icon">
+                      <img
+                        src="{{ block.settings.icon | image_url: width: 64 }}"
+                        alt=""
+                        loading="lazy"
+                        width="{{ block.settings.icon.width }}"
+                        height="{{ block.settings.icon.height }}"
+                      >
+                    </div>
+                  {% endif %}
+
+                  {% if block.settings.card_title != blank %}
+                    <h3 class="x-tabs-card__title">
+                      {{ block.settings.card_title }}
+                    </h3>
+                  {% endif %}
+
+                  {% if block.settings.card_text != blank %}
+                    <p class="x-tabs-card__text">
+                      {{ block.settings.card_text }}
+                    </p>
+                  {% endif %}
+
+                  {% if block.settings.cta_label != blank %}
+                    <a
+                      href="{{ block.settings.cta_url }}"
+                      class="button x-tabs-card__cta"
+                    >
+                      <span>{{ block.settings.cta_label }}</span>
+                      <span class="x-tabs-card__cta-icon" aria-hidden="true">
+                        <img
+                          src="{{ 'button-arrow-icon.svg' | asset_url }}"
+                          alt=""
+                          loading="lazy"
+                          width="10"
+                          height="12"
+                        >
+                      </span>
+                    </a>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+
+        <div class="x-tabs-main-swiper__pagination swiper-pagination"></div>
+      </div>
+
+      <div class="x-tabs-nav-shell">
+        <div class="x-tabs-nav-border"></div>
+
+     
+
+     
+      {%- comment -%} NAV / TABS ROW – теперь поверх картинки {%- endcomment -%}
+      <div class="x-tabs-nav-wrapper">
+
+     
+      <div
+        class="x-tabs-nav"
+        role="tablist"
+        aria-label="{{ section.settings.title | escape }}"
+        data-autoplay-delay="{{ autoplay_delay_ms }}"
+      >
+        {% for block in section.blocks %}
+          <button
+            class="x-tabs-nav__item{% if forloop.first %} is-active{% endif %}"
+            type="button"
+            role="tab"
+            aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+            data-tab-index="{{ forloop.index0 }}"
+            {{ block.shopify_attributes }}
+          >
+          <div class="x-tabs-nav__item-wrapper">
+
+         
+            {%- comment -%} заливка-таймер {%- endcomment -%}
+            <span class="x-tabs-nav__fill{% if forloop.first %} is-filled{% endif %}"></span>
+
+            <span class="x-tabs-nav__inner">
+                
+              {%- comment -%} SVG-капля для активного таба {%- endcomment -%}
+              <span class="x-tabs-nav__icon" aria-hidden="true">
+                <img
+                  src="{{ 'tab-bullet-icon.svg' | asset_url }}"
+                  alt=""
+                  loading="lazy"
+                  width="8"
+                  height="10"
+                >
+              </span>
+
+              {%- comment -%} кружочек для неактивных табов {%- endcomment -%}
+              <span class="x-tabs-nav__bullet" aria-hidden="true"></span>
+
+              <span class="x-tabs-nav__label">
+                {{ block.settings.tab_label }}
+              </span>
+            </span>
+             </div>
+          </button>
+        {% endfor %}
+        </div>
+       </div>
+       
+    </div>
+  {% endif %}
+</div>
+
+</section>
+
+{% schema %}
+{
+  "name": "X Tabs Slider",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section title",
+      "default": "Intelligent Solutions for Everyday Harmony"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Section background color",
+      "default": "#f4f2ee"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding top (mobile)",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "default": 58
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding bottom (mobile)",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "label": "Padding top (desktop)",
+      "min": 0,
+      "max": 160,
+      "step": 2,
+      "default": 110
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "label": "Padding bottom (desktop)",
+      "min": 0,
+      "max": 160,
+      "step": 2,
+      "default": 56
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_autoplay",
+      "label": "Enable autoplay",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "autoplay_delay",
+      "label": "Auto-switch delay (seconds)",
+      "min": 3,
+      "max": 20,
+      "step": 1,
+      "default": 7
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Tab slide",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_label",
+          "label": "Tab label",
+          "default": "Immersive Hydro-Massage"
+        },
+        {
+          "type": "image_picker",
+          "id": "bg_image",
+          "label": "Background image"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "card_title",
+          "label": "Card title",
+          "default": "Immersive Hydro-Massage Experience"
+        },
+        {
+          "type": "textarea",
+          "id": "card_text",
+          "label": "Card description",
+          "default": "Step into relaxation with Norkaya’s hydro-massage system. Designed to envelop your body in water jets..."
+        },
+        {
+          "type": "text",
+          "id": "cta_label",
+          "label": "Button label",
+          "default": "Discover wellness"
+        },
+        {
+          "type": "url",
+          "id": "cta_url",
+          "label": "Button link"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 5,
+  "presets": [
+    {
+      "name": "X Tabs Slider",
+      "category": "Custom",
+      "blocks": [
+        { "type": "tab" },
+        { "type": "tab" },
+        { "type": "tab" }
+      ]
+    }
+  ]
+}
+{% endschema %}
