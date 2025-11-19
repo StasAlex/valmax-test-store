@@ -130,6 +130,14 @@
     font-weight: var(--fw-secondary);
     line-height: var(--lh-secondary);
     letter-spacing: var(--ls-2);
+    background: transparent;
+    text-transform: capitalize;
+    color: var(--color-main-light);
+}
+.header-actions__action {
+    background: transparent;
+    text-transform: capitalize;
+    color: var(--color-main-light);
 }
 .header .header__columns {
     --padding-block-start: 0;

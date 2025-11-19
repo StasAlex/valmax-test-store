@@ -580,7 +580,10 @@
     --fs-h1-tablet:    60px;
     --fs-h2:    {{ settings.fs_h2     | default: 50 }}px;
     --fs-h2-mobile: 34px;
+    --fs-h2-tablet: 42px;
     --fs-h3:    {{ settings.fs_h3     | default: 32 }}px;
+    --fs-h3-mobile: 20px;
+    --fs-h3-tablet: 26px;
     --fs-h3-alt:{{ settings.fs_h3_alt | default: 28 }}px;
 
     --fw-base:  {{ settings.fw_base   | default: 400 }};
@@ -588,6 +591,7 @@
 
     /* Line heights (unitless from %) */
     --lh-base:      {{ settings.lh_base      | default: 120 | times: 0.01 }};
+    --lh-base-l:    {{ 124 | times: 0.01 }};
     --lh-secondary: {{ settings.lh_secondary | default: 130 | times: 0.01 }};
     --lh-max:       {{ settings.lh_max       | default: 140 | times: 0.01 }};
     --lh-min:       {{ settings.lh_min       | default: 114 | times: 0.01 }};
@@ -602,12 +606,17 @@
     --color-main-light: {{ settings.main_light | default: '#FAF7F1' }};
     --color-main-dark:  {{ settings.main_dark  | default: '#251E1B' }};
     --color-main-dark-lighter:  {{ 'rgba(37, 30, 27, .8)' }};
+    --color-main-dark-lightest:  {{ 'rgba(37, 30, 27, 0.5)' }};
     --color-dark-light: {{ settings.dark_light | default: '#312A27' }};
     --color-light-grey: {{ settings.light_grey | default: '#61656B' }};
     --color-light-grey-lighter: {{ 'rgba(37, 30, 27, 0.14)' }};
     --color-high-light-grey: {{ settings.high_light_grey | default: '#F6F3ED' }};
     --color-high-light-grey-lighter: {{ 'rgba(97, 101, 107, 0.2)' }};
+    --color-high-light-grey-lightest: {{ 'rgba(212, 206, 196, 0.31)'}};
     --color-high-light-grey-light: {{ '#E5E5E5' }};
+    --color-high-light-grey-secondary: {{ 'rgba(252, 246, 236, 0.1)' }};
+    --color-high-light-grey-triary: {{ 'rgba(250, 247, 241, 0.3)' }};
+    --color-high-light-light: {{ 'rgba(250, 247, 241, 0.8)' }};
 
     --menu-link-padding-inline: 17px;
   }
