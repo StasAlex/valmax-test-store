@@ -123,7 +123,7 @@
      
 
      
-      {%- comment -%} NAV / TABS ROW – теперь поверх картинки {%- endcomment -%}
+      {%- comment -%} NAV / TABS ROW {%- endcomment -%}
       <div class="x-tabs-nav-wrapper">
 
      
@@ -145,12 +145,10 @@
           <div class="x-tabs-nav__item-wrapper">
 
          
-            {%- comment -%} заливка-таймер {%- endcomment -%}
             <span class="x-tabs-nav__fill{% if forloop.first %} is-filled{% endif %}"></span>
 
             <span class="x-tabs-nav__inner">
                 
-              {%- comment -%} SVG-капля для активного таба {%- endcomment -%}
               <span class="x-tabs-nav__icon" aria-hidden="true">
                 <img
                   src="{{ 'tab-bullet-icon.svg' | asset_url }}"
@@ -161,7 +159,6 @@
                 >
               </span>
 
-              {%- comment -%} кружочек для неактивных табов {%- endcomment -%}
               <span class="x-tabs-nav__bullet" aria-hidden="true"></span>
 
               <span class="x-tabs-nav__label">

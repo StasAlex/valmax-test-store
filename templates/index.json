@@ -254,7 +254,7 @@
       }
     },
     "scroll_gallery_gFzeBA": {
-      "type": "scroll-gallery",
+      "type": "x-scroll-gallery",
       "blocks": {
         "image_QY4G7T": {
           "type": "image",
