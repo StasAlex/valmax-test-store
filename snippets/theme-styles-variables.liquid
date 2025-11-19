@@ -55,7 +55,7 @@
     --narrow-content-width: 36rem;
     --normal-content-width: 42rem;
     --wide-content-width: 46rem;
-    --narrow-page-width: 90rem;
+    --narrow-page-width: 1360px;
     --normal-page-width: 120rem;
     --wide-page-width: 150rem;
 
@@ -77,8 +77,9 @@
     }
 
     /* Letter spacing */
-    --letter-spacing-sm: 0.06em;
-    --letter-spacing-md: 0.13em;
+    --letter-spacing-xs: -0.03em;
+    --letter-spacing-sm: -0.02em;
+    --letter-spacing-md: -0.01em;
 
     /* Font families */
     --font-body--family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
@@ -447,7 +448,7 @@
     --icon-size-2xs: 0.6rem;
     --icon-size-xs: 0.85rem;
     --icon-size-sm: 1.25rem;
-    --icon-size-md: 1.375rem;
+    --icon-size-md: 20px;
     --icon-size-lg: 1.5rem;
     --icon-stroke-width: {% if settings.icon_stroke == 'thin' %}1px{% elsif settings.icon_stroke == 'heavy' %}2px{% else %}1.5px{% endif %};
 
@@ -495,8 +496,10 @@
     --drawer-header-desktop-top: 0rem;
     --drawer-padding: calc(var(--padding-sm) + 7px);
     --drawer-height: 100dvh;
-    --drawer-width: 95vw;
+    --drawer-width: 100vw;
     --drawer-max-width: 500px;
+    --header-height-mobile: 70px;
+    --header-height-desktop: 100px;
 
     /* Variant Picker Swatches */
     --variant-picker-swatch-width-unitless: {{ settings.variant_swatch_width }};
@@ -562,5 +565,59 @@
     --cart-secondary-font-family: var(--font-{{ settings.cart_price_font }}--family);
     --cart-secondary-font-style: var(--font-{{ settings.cart_price_font }}--style);
     --cart-secondary-font-weight: var(--font-{{ settings.cart_price_font }}--weight);
+
+    /* Font family */
+    --ff-base:  {{ "Articulat CF, sans-serif" }};
+
+    /* Font sizes (px) */
+    --fs-base:  {{ settings.fs_base   | default: 16 }}px;
+    --fs-base-md:  18px;
+    --fs-base-xl:  20px;
+    --fs-large: {{ settings.fs_large  | default: 24 }}px;
+    --fs-mini:  {{ settings.fs_mini   | default: 14 }}px;
+    --fs-h1:    {{ settings.fs_h1     | default: 72 }}px;
+    --fs-h1-mobile:    46px;
+    --fs-h1-tablet:    60px;
+    --fs-h2:    {{ settings.fs_h2     | default: 50 }}px;
+    --fs-h2-mobile: 34px;
+    --fs-h2-tablet: 42px;
+    --fs-h3:    {{ settings.fs_h3     | default: 32 }}px;
+    --fs-h3-mobile: 20px;
+    --fs-h3-tablet: 26px;
+    --fs-h3-alt:{{ settings.fs_h3_alt | default: 28 }}px;
+
+    --fw-base:  {{ settings.fw_base   | default: 400 }};
+    --fw-secondary: {{ settings.fw_secondary  | default: 500 }};
+
+    /* Line heights (unitless from %) */
+    --lh-base:      {{ settings.lh_base      | default: 120 | times: 0.01 }};
+    --lh-base-l:    {{ 124 | times: 0.01 }};
+    --lh-secondary: {{ settings.lh_secondary | default: 130 | times: 0.01 }};
+    --lh-max:       {{ settings.lh_max       | default: 140 | times: 0.01 }};
+    --lh-min:       {{ settings.lh_min       | default: 114 | times: 0.01 }};
+    --lh-min-xs:    {{ settings.lh_min_xs    | default: 106 | times: 0.01 }};
+
+    /* Letter spacing (em) */
+    --ls-1: {{ settings.ls_1 | default: '-0.01' }}em;
+    --ls-2: {{ settings.ls_2 | default: '-0.02' }}em;
+    --ls-3: {{ settings.ls_3 | default: '-0.03' }}em;
+
+    /* Colors */
+    --color-main-light: {{ settings.main_light | default: '#FAF7F1' }};
+    --color-main-dark:  {{ settings.main_dark  | default: '#251E1B' }};
+    --color-main-dark-lighter:  {{ 'rgba(37, 30, 27, .8)' }};
+    --color-main-dark-lightest:  {{ 'rgba(37, 30, 27, 0.5)' }};
+    --color-dark-light: {{ settings.dark_light | default: '#312A27' }};
+    --color-light-grey: {{ settings.light_grey | default: '#61656B' }};
+    --color-light-grey-lighter: {{ 'rgba(37, 30, 27, 0.14)' }};
+    --color-high-light-grey: {{ settings.high_light_grey | default: '#F6F3ED' }};
+    --color-high-light-grey-lighter: {{ 'rgba(97, 101, 107, 0.2)' }};
+    --color-high-light-grey-lightest: {{ 'rgba(212, 206, 196, 0.31)'}};
+    --color-high-light-grey-light: {{ '#E5E5E5' }};
+    --color-high-light-grey-secondary: {{ 'rgba(252, 246, 236, 0.1)' }};
+    --color-high-light-grey-triary: {{ 'rgba(250, 247, 241, 0.3)' }};
+    --color-high-light-light: {{ 'rgba(250, 247, 241, 0.8)' }};
+
+    --menu-link-padding-inline: 17px;
   }
 {% endstyle %}

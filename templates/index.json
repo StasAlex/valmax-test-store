@@ -6,101 +6,25 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "hero_jVaWmY": {
       "type": "hero",
       "blocks": {
-        "text_YLPk4p": {
-          "type": "text",
-          "name": "t:names.heading",
-          "settings": {
-            "text": "<p>Browse our latest products</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h2",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground-heading)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "button_H9gpTf": {
-          "type": "button",
-          "name": "t:names.button",
-          "settings": {
-            "label": "Shop all",
-            "link": "shopify://collections/all",
-            "open_in_new_tab": false,
-            "style_class": "button-secondary",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_YLPk4p",
-        "button_H9gpTf"
-      ],
-      "name": "t:names.hero",
-      "settings": {
-        "media_type_1": "image",
-        "media_type_2": "image",
-        "open_in_new_tab": false,
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "space-between",
-        "vertical_alignment": "flex-end",
-        "align_baseline": true,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "flex-end",
-        "gap": 24,
-        "section_width": "page-width",
-        "section_height": "medium",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-6",
-        "toggle_overlay": true,
-        "overlay_color": "#12121266",
-        "overlay_style": "solid",
-        "gradient_direction": "to bottom",
-        "blurred_reflection": false,
-        "reflection_opacity": 75,
-        "padding-block-start": 100,
-        "padding-block-end": 72
-      }
-    },
-    "product_list_fa6P9H": {
-      "type": "product-list",
-      "blocks": {
-        "static-header": {
-          "type": "_product-list-content",
-          "name": "t:names.header",
-          "static": true,
+        "group_AtVDFy": {
+          "type": "group",
+          "name": "t:names.group",
           "settings": {
             "content_direction": "row",
-            "vertical_on_mobile": false,
+            "vertical_on_mobile": true,
             "horizontal_alignment": "space-between",
-            "vertical_alignment": "flex-end",
-            "align_baseline": true,
+            "vertical_alignment": "center",
+            "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "fill",
+            "gap": 32,
+            "width": "custom",
             "custom_width": 100,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
@@ -115,172 +39,409 @@
             "border_width": 1,
             "border_opacity": 100,
             "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
           "blocks": {
-            "product_list_text_YFtzcL": {
-              "type": "_product-list-text",
-              "name": "t:names.collection_title",
+            "group_yPaLJk": {
+              "type": "group",
+              "name": "t:names.group",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h4",
-                "font": "var(--font-body--family)",
-                "font_size": "",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "product_list_button_MWeP9V": {
-              "type": "_product-list-button",
-              "name": "t:names.product_list_button",
-              "settings": {
-                "label": "View all",
-                "open_in_new_tab": false,
-                "style_class": "link",
-                "width": "fit-content",
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 18,
+                "width": "fill",
                 "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "product_list_text_YFtzcL",
-            "product_list_button_MWeP9V"
-          ]
-        },
-        "static-product-card": {
-          "type": "_product-card",
-          "name": "t:names.product_card",
-          "static": true,
-          "settings": {
-            "product_card_gap": 4,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "product_card_gallery_677WP3": {
-              "type": "_product-card-gallery",
-              "name": "t:names.product_card_media",
-              "settings": {
-                "image_ratio": "adapt",
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
                 "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
-              "blocks": {}
-            },
-            "product_title_YXxMTj": {
-              "type": "product-title",
-              "name": "t:names.product_title",
-              "settings": {
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 4,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+              "blocks": {
+                "text_ehw3n4": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Reclaim Your Balance. Elevate Your Life.</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "custom",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1.5rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_jPURxq": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<p>Harmony of Body, Mind, and Space — All in One Solution</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h1",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground-heading)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
               },
-              "blocks": {}
+              "block_order": [
+                "text_ehw3n4",
+                "text_jPURxq"
+              ]
             },
-            "price_JQzVV4": {
-              "type": "price",
-              "name": "t:names.product_price",
+            "group_TKkQBk": {
+              "type": "group",
+              "name": "t:names.group",
               "settings": {
-                "show_sale_price_first": true,
-                "show_installments": false,
-                "show_tax_info": false,
-                "type_preset": "h6",
-                "width": "100%",
-                "alignment": "left",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "color": "var(--color-foreground)",
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-end",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "flex-end",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fill",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
-              "blocks": {}
+              "blocks": {
+                "button_XBL9NG": {
+                  "type": "button",
+                  "name": "t:names.button",
+                  "settings": {
+                    "label": "Begin Your Wellness Journey",
+                    "link": "shopify://collections/all",
+                    "open_in_new_tab": false,
+                    "style_class": "button",
+                    "width": "fit-content",
+                    "custom_width": 100,
+                    "width_mobile": "fit-content",
+                    "custom_width_mobile": 100
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "button_XBL9NG"
+              ]
             }
           },
           "block_order": [
-            "product_card_gallery_677WP3",
-            "product_title_YXxMTj",
-            "price_JQzVV4"
+            "group_yPaLJk",
+            "group_TKkQBk"
           ]
         }
       },
-      "name": "Featured collection",
+      "block_order": [
+        "group_AtVDFy"
+      ],
+      "name": "t:names.hero",
       "settings": {
-        "collection": "all",
-        "layout_type": "grid",
-        "carousel_on_mobile": false,
-        "max_products": 8,
-        "columns": 4,
-        "mobile_columns": "2",
-        "mobile_card_size": "60cqw",
-        "columns_gap": 8,
-        "rows_gap": 24,
-        "icons_style": "arrow",
-        "icons_shape": "none",
+        "media_type_1": "video",
+        "video_1": "shopify://files/videos/istockphoto-2195726864-640_adpp_is.mp4",
+        "media_type_2": "image",
+        "stack_media_on_mobile": false,
+        "custom_mobile_media": false,
+        "media_type_1_mobile": "image",
+        "media_type_2_mobile": "image",
+        "link": "",
+        "open_in_new_tab": false,
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "space-between",
+        "vertical_alignment": "flex-end",
+        "align_baseline": true,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "flex-end",
+        "gap": 24,
         "section_width": "page-width",
-        "horizontal_alignment": "flex-start",
-        "gap": 28,
-        "color_scheme": "scheme-1",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "section_height": "full-screen",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-6",
+        "toggle_overlay": true,
+        "overlay_color": "#12121266",
+        "overlay_style": "solid",
+        "gradient_direction": "to bottom",
+        "blurred_reflection": false,
+        "reflection_opacity": 75,
+        "padding-block-start": 100,
+        "padding-block-end": 72
+      }
+    },
+    "scroll_gallery_gFzeBA": {
+      "type": "x-scroll-gallery",
+      "blocks": {
+        "image_QY4G7T": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/User_Image.png",
+            "alt": "",
+            "link": ""
+          }
+        },
+        "image_rkk7UM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/User_Image_1.png",
+            "alt": "",
+            "link": "shopify://collections/all"
+          }
+        },
+        "image_FUnBMx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/User_Image_2.png",
+            "alt": "",
+            "link": "shopify://collections/luxury-jacuzzis-outdoor-spas"
+          }
+        },
+        "image_4CfD3i": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/User_Image_3.png",
+            "alt": "",
+            "link": "shopify://collections/all"
+          }
+        },
+        "image_Fg8Fp4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/User_Image_4.png",
+            "alt": "",
+            "link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "image_QY4G7T",
+        "image_rkk7UM",
+        "image_FUnBMx",
+        "image_4CfD3i",
+        "image_Fg8Fp4"
+      ],
+      "name": "X Scroll gallery",
+      "settings": {
+        "heading": "Norkaya is more than just hydrotherapy",
+        "text": "<p>ʼOur journey is just beginning, and we will continue to innovate, integrating wellness concepts into every facet of your life – from the water you immerse in to the spaces you inhabit.</p>"
+      }
+    },
+    "x_video_slider_fVeHTP": {
+      "type": "x-video-slider",
+      "blocks": {
+        "slide_xRdtDU": {
+          "type": "slide",
+          "settings": {
+            "slide_title": "Overwhelmed by Stress?",
+            "slide_description": "The relentless pace of modern life can leave us depleted, longing for moments of profound peace and mental clarity.",
+            "slide_media": "shopify://files/videos/watermarked_preview.mp4"
+          }
+        },
+        "slide_8LQigj": {
+          "type": "slide",
+          "settings": {
+            "slide_title": "Feeling Mentally Drained?",
+            "slide_description": "The constant demands of daily life can leave your mind exhausted. Discover how to restore balance and reconnect with a sense of inner calm.",
+            "slide_media": "shopify://files/videos/watermarked_preview.mp4"
+          }
+        },
+        "slide_B6TNcY": {
+          "type": "slide",
+          "settings": {
+            "slide_title": "Need a Moment to Breathe?",
+            "slide_description": "When everything feels overwhelming, even a small pause can change everything. Give yourself permission to slow down and recharge.",
+            "slide_media": "shopify://files/videos/watermarked_preview.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "slide_xRdtDU",
+        "slide_8LQigj",
+        "slide_B6TNcY"
+      ],
+      "name": "X Video Slider",
+      "settings": {
+        "subtitle": "The Human Need",
+        "title": "Finding Balance  in a Modern World",
+        "bg_color": "#251e1b",
+        "padding_top_desktop": 110,
+        "padding_bottom_desktop": 110,
+        "padding_top_mobile": 58,
+        "padding_bottom_mobile": 58
+      }
+    },
+    "x_tabs_slider_QdNi9C": {
+      "type": "x-tabs-slider",
+      "blocks": {
+        "tab_AzimVK": {
+          "type": "tab",
+          "settings": {
+            "tab_label": "Immersive Hydro-Massage",
+            "bg_image": "shopify://shop_images/tab-1.png",
+            "icon": "shopify://shop_images/tab-icon-1.svg",
+            "card_title": "Immersive Hydro-Massage",
+            "card_text": "Step into total relaxation with Norkaya’s hydro-massage system. Designed to envelop your body in soothing water jets, it delivers a spa-like experience that relieves tension, improves circulation, and restores balance after every session.",
+            "cta_label": "Discover wellness",
+            "cta_url": "shopify://collections/all"
+          }
+        },
+        "tab_b7T9tK": {
+          "type": "tab",
+          "settings": {
+            "tab_label": "The Hot & Cold Hydro-Ritual",
+            "bg_image": "shopify://shop_images/tab-2.png",
+            "icon": "shopify://shop_images/tab-icon-2.svg",
+            "card_title": "The Hot & Cold Hydro-Ritual",
+            "card_text": "Transform your living space into a personal retreat. Norkaya’s complete wellness solutions combine relaxation, hydrotherapy, and design to create a sanctuary where body and mind can truly recharge.",
+            "cta_label": "Discover wellness",
+            "cta_url": "shopify://collections/all"
+          }
+        },
+        "tab_TRGt9Q": {
+          "type": "tab",
+          "settings": {
+            "tab_label": "Artisan Wood & Marble Craftsmanship",
+            "bg_image": "shopify://shop_images/tab-3.png",
+            "icon": "shopify://shop_images/tab-icon-1.svg",
+            "card_title": "Artisan Wood & Marble Craftsmanship",
+            "card_text": "Immerse yourself in an aromatic ritual crafted from ultra-refined essential blends. Crystal-clean airflow envelops your senses with subtle luxury, transforming each breath into a moment of clarity, serenity, and profound indulgence. Designed for those who seek wellness without compromise.",
+            "cta_label": "Discover wellness",
+            "cta_url": "shopify://collections/all"
+          }
+        },
+        "tab_kT9atW": {
+          "type": "tab",
+          "settings": {
+            "tab_label": "Fitness & Wellness",
+            "bg_image": "shopify://shop_images/tab-1.png",
+            "icon": "shopify://shop_images/tab-icon-1.svg",
+            "card_title": "Fitness & Wellness",
+            "card_text": "Discover a new dimension of hydro-therapy. Dynamic water pulses adapt to your body’s natural rhythm, easing tension with surgical precision while maintaining an exquisite balance of warmth, pressure, and comfort. A refined ritual that transforms routine into pure rejuvenation.",
+            "cta_label": "Discover wellness",
+            "cta_url": "shopify://collections/all"
+          }
+        },
+        "tab_QHPmNd": {
+          "type": "tab",
+          "settings": {
+            "tab_label": "Complete Home Sanctuary",
+            "bg_image": "shopify://shop_images/tab-2.png",
+            "icon": "shopify://shop_images/tab-icon-1.svg",
+            "card_title": "Complete Home Sanctuary",
+            "card_text": "Experience a symphony of soft, intelligent heat that flows through your body like a calming tide. Infra-thermal technology releases deep-layer tension, stabilizes circulation, and brings a rare level of tranquility reserved for private spa sanctuaries.",
+            "cta_label": "Discover wellness",
+            "cta_url": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "tab_AzimVK",
+        "tab_b7T9tK",
+        "tab_TRGt9Q",
+        "tab_kT9atW",
+        "tab_QHPmNd"
+      ],
+      "name": "X Tabs Slider",
+      "settings": {
+        "title": "Intelligent Solutions for Everyday Harmony",
+        "bg_color": "#faf7f1",
+        "padding_top_mobile": 58,
+        "padding_bottom_mobile": 0,
+        "padding_top_desktop": 110,
+        "padding_bottom_desktop": 56,
+        "enable_autoplay": true,
+        "autoplay_delay": 5
       }
     }
   },
   "order": [
     "hero_jVaWmY",
-    "product_list_fa6P9H"
+    "scroll_gallery_gFzeBA",
+    "x_video_slider_fVeHTP",
+    "x_tabs_slider_QdNi9C"
   ]
 }

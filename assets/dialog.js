@@ -56,7 +56,6 @@ export class DialogComponent extends Component {
       document.body.style.width = '100%';
       document.body.style.position = 'fixed';
       document.body.style.top = `-${scrollY}px`;
-
       dialog.showModal();
       this.dispatchEvent(new DialogOpenEvent());
 
@@ -182,4 +181,19 @@ document.addEventListener(
     }
   },
   { capture: true }
+);
+
+document.addEventListener(
+    'dialog:open',
+    (event) => {
+        document.body.classList.add('search-modal-opened')
+    },
+    { capture: true }
+);
+document.addEventListener(
+    'dialog:close',
+    (event) => {
+        document.body.classList.remove('search-modal-opened')
+    },
+    { capture: true }
 );

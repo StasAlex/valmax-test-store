@@ -74,7 +74,8 @@
           hidden
           on:click="/resetSearch"
         >
-          {{ 'actions.clear' | t }}
+            <span class="reset-search-label"> {{ 'actions.clear' | t }}</span>
+            <span class="reset-search-icon"> {{ 'reset-search-icon.svg' | inline_asset_content }}</span>
         </button>
       </div>
       <button
@@ -85,9 +86,12 @@
         ref="closeModalButton"
       >
         <span class="svg-wrapper">
-          {{ 'icon-close.svg' | inline_asset_content }}
+          {{ 'theme-icon-close.svg' | inline_asset_content }}
         </span>
       </button>
+        <div class="predictive-search-form__description-mobile">
+            {{ 'content.search_form_description_mobile' | t  }}
+        </div>
     </div>
 
     <div class="predictive-search-form__content-wrapper">

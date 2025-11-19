@@ -20,18 +20,25 @@
       id="view-transition-render-blocker"
     >
 
+      {%- render 'libs' -%}
     {%- render 'meta-tags' -%}
     {%- render 'stylesheets' -%}
     {%- render 'fonts' -%}
     {%- render 'scripts' -%}
     {%- render 'theme-styles-variables' -%}
     {%- render 'color-schemes' -%}
+    {%- render 'theme-elements' -%}
 
     {% if request.design_mode %}
       {%- render 'theme-editor' -%}
     {% endif %}
 
-    {{ content_for_header }}
+      {% if request.page_type == 'index' %}
+          {{ 'home.css' | asset_url | stylesheet_tag: preload: true }}
+      {% endif %}
+
+
+      {{ content_for_header }}
   </head>
 
   <body class="page-width-{{ settings.page_width }} card-hover-effect-{{ settings.card_hover_effect }}">

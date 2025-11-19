@@ -225,11 +225,11 @@
     "reviews": "reviews",
     "read_more": "Read more...",
     "search_input_label": "Search",
-    "search_input_placeholder": "Search",
+    "search_input_placeholder": "Search for products",
     "search": "Search",
     "search_results": "Search results",
     "search_results_label": "Search results",
-    "search_results_no_results": "No results found for \"{{ terms }}\". Try another search.",
+    "search_results_no_results": "Your search \"{{ terms }}\"did not return any results. Try a different keyword.",
     "search_results_no_results_check_spelling": "No results found for \"{{ terms }}\". Check the spelling or use a different word or phrase.",
     "search_results_resource_articles": "Blog posts",
     "search_results_resource_collections": "Collections",
@@ -243,6 +243,7 @@
     "search_results_resource_queries": "Search suggestions",
     // Button to go from search preview to full search results page
     "search_results_view_all": "View all",
+    "search_form_description_mobile": "Search for products, categories, information, etc.",
     "search_results_view_all_button": "View all",
     // Label for customer's note to seller during checkout
     "seller_note": "Special instructions",

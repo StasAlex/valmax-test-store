@@ -39,4 +39,26 @@
     fetchpriority="low"
   >
 {%- endunless -%}
+
+{% style %}
+    @font-face {
+        font-family: 'Articulat CF';
+        src: url('{{ "Articulat-CF-Regular.woff2" | asset_url }}') format('woff2'),
+        url('{{ "Articulat-CF-Regular.woff" | asset_url }}') format('woff'),
+        url('{{ "Articulat-CF-Regular.ttf" | asset_url }}') format('ttf');;
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'Articulat CF';
+        src: url('{{ "]Articulat-CF-Medium.woff2" | asset_url }}') format('woff2'),
+        url('{{ "Articulat-CF-Medium.woff" | asset_url }}') format('woff'),
+        url('{{ "Articulat-CF-Medium.ttf" | asset_url }}') format('ttf');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+    }
+{% endstyle %}
 {% # theme-check-enable %}
