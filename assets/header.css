@@ -134,10 +134,16 @@
     text-transform: capitalize;
     color: var(--color-main-light);
 }
-.header-actions__action {
+.header-actions__action,
+.menu-list__link {
     background: transparent;
     text-transform: capitalize;
     color: var(--color-main-light);
+}
+.header[data-sticky-state="active"] .header-actions__action,
+.menu-list__link,
+.header:has(.header-menu[aria-expanded="true"]) .header-actions__action {
+    color: var(--color-main-dark);
 }
 .header .header__columns {
     --padding-block-start: 0;
